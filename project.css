@@ -812,7 +812,19 @@ a {
 .arts-gallery-btn:hover span {
     transform: translateX(4px);
 }
+.whatsapp-button {
+  display: inline-block;
+  padding: 12px 22px;
+  background: #25D366;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+}
 
+.whatsapp-button:hover {
+  opacity: 0.9;
+}
 
 /* ==========================================
    9. FOOTER
