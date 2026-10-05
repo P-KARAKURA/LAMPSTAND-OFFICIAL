@@ -254,7 +254,7 @@ header.scrolled .join-btn:hover {
 
     max-width: 900px;
 
-    line-height: 1.2;
+    line-height: 1.7;
 
     margin-bottom: 20px;
 
@@ -666,9 +666,9 @@ header.scrolled .join-btn:hover {
 }
 
 .program-card p {
-    font-size: 15px;
+    font-size: 16px;
 
-    line-height: 1.7;
+    line-height: 1.8;
 
     color: #555;
 
@@ -902,9 +902,9 @@ header.scrolled .join-btn:hover {
 .story-content p {
     color: #555;
 
-    font-size: 15px;
+    font-size: 17px;
 
-    line-height: 1.7;
+    line-height: 1.8;
 
     margin-bottom: 22px;
 }
@@ -1764,7 +1764,7 @@ header.scrolled .join-btn:hover {
     }
 
     .hero-content p {
-        font-size: 16px;
+        font-size: 20px;
     }
 
     .hero-buttons {
