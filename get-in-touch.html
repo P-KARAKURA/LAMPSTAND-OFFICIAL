@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+    /* ==========================================
+   LAMPSTAND CONTACT SECTION STYLES
+   ========================================== */
+
+/* Section Layout */
+.contact-section {
+    padding: 80px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #2c3e50;
+}
+
+/* Section Header */
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-title span {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #d4af37; /* Lampstand Gold */
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.section-title h2 {
+    font-size: 2.25rem;
+    color: #1b5e20; /* Lampstand Deep Green */
+    margin: 0 0 12px 0;
+    font-weight: 700;
+}
+
+.section-title p {
+    color: #555;
+    font-size: 1.05rem;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Form Container */
+.contact-form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Two-column layout for Name and Email */
+.form-group {
+    display: flex;
+    gap: 20px;
+}
+
+.form-group input {
+    flex: 1;
+}
+
+/* Base Form Inputs, Select, and Textarea */
+.contact-form-container input[type="text"],
+.contact-form-container input[type="email"],
+.contact-form-container select,
+.contact-form-container textarea {
+    width: 100%;
+    padding: 14px 18px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    font-size: 0.95rem;
+    color: #333;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+    font-family: inherit;
+}
+
+/* Customizing Select Dropdown */
+.contact-form-container select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%201b5e20' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 18px center;
+    background-size: 16px;
+    cursor: pointer;
+}
+
+/* Placeholder Styling */
+.contact-form-container input::placeholder,
+.contact-form-container textarea::placeholder {
+    color: #aaa;
+}
+
+/* Hover & Focus States */
+.contact-form-container input:hover,
+.contact-form-container select:hover,
+.contact-form-container textarea:hover {
+    background-color: #f0f4f1;
+    border-color: #c8e6c9;
+}
+
+.contact-form-container input:focus,
+.contact-form-container select:focus,
+.contact-form-container textarea:focus {
+    outline: none;
+    background-color: #ffffff;
+    border-color: #1b5e20;
+    box-shadow: 0 0 0 3px rgba(27, 94, 32, 0.15);
+}
+
+/* Textarea Field */
+.contact-form-container textarea {
+    resize: vertical;
+    min-height: 130px;
+}
+
+/* Submit Button */
+.primary-btn {
+    align-self: flex-start;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: #1b5e20;
+    color: #ffffff;
+    border: 2px solid #1b5e20;
+    padding: 14px 32px;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(27, 94, 32, 0.2);
+}
+
+.primary-btn:hover {
+    background-color: #d4af37;
+    border-color: #d4af37;
+    color: #1b5e20;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(212, 175, 55, 0.3);
+}
+
+.primary-btn:active {
+    transform: translateY(0);
+}
+
+/* Responsive Styles for Mobile Screens */
+@media (max-width: 640px) {
+    .form-group {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .primary-btn {
+        width: 100%;
+    }
+
+    .section-title h2 {
+        font-size: 1.75rem;
+    }
+}
+   </style>
+</head>
+<body>
+    
+<section class="contact-section" id="contact">
+
+    <div class="section-title">
+        <span>
+            <i class="fas fa-envelope"></i> GET IN TOUCH
+        </span>
+        <h2>
+            Let's Build Something Together
+        </h2>
+        <p>
+            Do you want to start a class with Lampstand? Choose your interest area.
+        </p>
+    </div>
+
+    <form class="contact-form-container" action="https://api.web3forms.com/submit" method="POST">
+
+        <!-- Web3Forms Access Key -->
+        <input type="hidden" name="access_key" value="ad47d394-2473-4fcf-a515-ffc286f2abf7">
+
+        <!-- Optional: Redirect back or prevent default page navigation if needed -->
+        <input type="hidden" name="from_name" value="Lampstand Website Visitor">
+
+        <div class="form-group">
+            <input type="text"
+                   name="name"
+                   placeholder="Your Full Name"
+                   required>
+
+            <input type="email"
+                   name="email"
+                   placeholder="Your Email Address"
+                   required>
+        </div>
+
+        <div class="form-group">
+            <select name="interest_area" required>
+                <option value="" disabled selected>Select your interest area</option>
+             
+                <option value="Habloclass & English Intermediate class">
+                    HABLOCLASS & Intermediate English Class
+                </option>
+                <option value="Habloclass French">
+                    Hablo Basic French
+                </option>
+                <option value="HABLO / Storytelling">
+                    Discussions & Debates
+                </option>
+                <option value="Creative public speaking ">
+                    Dialogue & Public Speaking Practice
+                </option>
+            </select>
+        </div>
+
+        <textarea name="message"
+                  rows="5"
+                  placeholder="Tell us about your project, idea, or message..."
+                  required></textarea>
+
+        <button type="submit" class="primary-btn">
+            <i class="fas fa-paper-plane"></i> Send Message
+        </button>
+
+    </form>
+
+</section>
+
+
+</body>
+</html>
