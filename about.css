@@ -639,9 +639,9 @@ a {
 /* .context-content p {
     /* /* font-family: 'Archivo', sans-serif; */
     font-size: 1rem;
-    font-weight: 400;
+    font-weight: 0;
     line-height: 1.7;
-    color: var(--text);
+    color: black;
     margin-bottom: 1.5rem;
 } */ */
 
